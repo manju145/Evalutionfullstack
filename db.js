@@ -1,7 +1,7 @@
 const mongosse = require("mongoose");
-require("dotenv").config();
+// require("dotenv").config();
 
-const connection = mongosse.connect(process.env.MONGO_LINk)
+const connection = mongosse.connect("mongodb://localhost:27017")
 
 
 module.exports = {
